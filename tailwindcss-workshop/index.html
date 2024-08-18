@@ -1,33 +1,49 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarjeta de Producto</title>
     <script src="https://cdn.tailwindcss.com"></script>
-  </head>
-  <body> 
-    Your Result
-    76
-    of 100
-  
-    Great
-    You scored higher than 65% of the people who have taken these tests.
-  
-    Summary
-  
-    Reaction
-    80 / 100
-  
-    Memory
-    92 / 100
-  
-    Verbal
-    61 / 100
-  
-    Visual
-    72 / 100
-  
-    Continue
-
-  </body>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Source Serif 4', sans-serif;
+            background-color: #f1eae4;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        h1, .precio {
+            font-family: 'DM Serif Display', serif;
+        }
+    </style>
+</head>
+<body>
+    <!-- Diseño responsive -->
+    <div class="bg-white shadow-lg rounded-lg overflow-hidden max-w-sm md:max-w-4xl md:flex">
+        <picture>
+            <source media="(min-width: 768px)" srcset="https://www.onegirl-oneworld.com/wp-content/uploads/2022/02/best-chanel-perfume-gabrielle-1152x1536.jpeg">
+            <img class="w-46 md:w-72 lg:w-72 xl:w-96" src="https://s1.elespanol.com/2023/05/18/mujer/belleza/764683734_233244088_1706x960.jpg" alt="Perfume Gabrielle">
+        </picture>
+        
+        <!-- Contenido -->
+        <div class="p-6 sm:w-46 md:w-96 lg:w-72 md:flex md:flex-col md:justify-center">
+            <h2 class="text-sm font-medium text-gray-400">PERFUME</h2>
+            <h1 class="text-2xl font-bold text-gray-900 mt-1">Gabrielle Essence Eau De Parfum</h1>
+            <p class="text-gray-500 mt-2">A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of CHANEL.</p>
+            <div class="mt-4 flex items-center justify-between">
+                <span class="text-2xl font-semibold text-green-600 precio">$149.99</span>
+                <span class="text-gray-400 line-through">$169.99</span>
+            </div>
+            <button class="mt-4 w-full bg-green-600 text-white text-center py-2 rounded-md hover:bg-green-700 flex justify-center items-center">
+                <svg width="15" height="16" xmlns="http://www.w3.org/2000/svg" class="mr-2">
+                    <path d="M14.383 10.388a2.397 2.397 0 0 0-1.518-2.222l1.494-5.593a.8.8 0 0 0-.144-.695.8.8 0 0 0-.631-.28H2.637L2.373.591A.8.8 0 0 0 1.598 0H0v1.598h.983l1.982 7.4a.8.8 0 0 0 .799.59h8.222a.8.8 0 0 1 0 1.599H1.598a.8.8 0 1 0 0 1.598h.943a2.397 2.397 0 1 0 4.507 0h1.885a2.397 2.397 0 1 0 4.331-.376 2.397 2.397 0 0 0 1.12-2.021ZM11.26 7.99H4.395L3.068 3.196h9.477L11.26 7.991Zm-6.465 6.392a.8.8 0 1 1 0-1.598.8.8 0 0 1 0 1.598Zm6.393 0a.8.8 0 1 1 0-1.598.8.8 0 0 1 0 1.598Z" fill="#FFF"/>
+                </svg>
+                Añadir al carrito
+            </button>
+        </div>
+    </div>
+</body>
 </html>
